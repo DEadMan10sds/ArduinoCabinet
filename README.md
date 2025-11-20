@@ -2,6 +2,10 @@
 
 This program establishes a class for an UDP socket server that handles the information given by the configured sensors, the connection is established by ethernet with the IP Address given by DHCP, showed at the start of the serial output.
 
+## Board
+
+For the arduino IDE, the board selected that ensures the correct operation of the ESP32 is the ==Fri3d Badge 2024==
+
 ## Current sensors
 
 The sensors that are currently prepared are:
