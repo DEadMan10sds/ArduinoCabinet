@@ -21,6 +21,12 @@ The UDPSocket handles all the communication to emit to a main backend any inform
 
 The class instantiates each sensors class to have a more structured logic with SOLID principles.
 
+### UDP Responses
+
+The class is also prepared for receiving events with commands, these commands are implemented with a "Command Pattern" that allows us to stablish several commands to retrieve specific information to an specific host via UDP without emitting an event to all the connected hosts.
+
+Each command has a function associated to execute when it's received, this allows a more flexible way to gather information when needed.
+
 ## Sensor classes
 
 Each sensor must have a class that retrieves the information relative to the sensor, the UDP class will be responsible of calling the getter of the sensor's main information.
